@@ -120,6 +120,39 @@ const sidebars = {
         },
       ],
     },
+    {
+      type: 'category',
+      label: 'Module 4: Vision-Language-Action (VLA)',
+      items: [
+        {
+          type: 'category',
+          label: 'Voice-to-Action (Whisper-based voice commands)',
+          items: [
+            'module4/voice-to-action-whisper',
+            'module4/voice-to-action-whisper-exercise',
+            'module4/voice-to-action-whisper-quiz',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Cognitive Planning with LLMs (NL → ROS 2 actions)',
+          items: [
+            'module4/cognitive-planning-llms',
+            'module4/cognitive-planning-llms-exercise',
+            'module4/cognitive-planning-llms-quiz',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Capstone: Autonomous Humanoid System',
+          items: [
+            'module4/capstone-autonomous-humanoid',
+            'module4/capstone-autonomous-humanoid-exercise',
+            'module4/capstone-autonomous-humanoid-quiz',
+          ],
+        },
+      ],
+    },
   ],
 };
 

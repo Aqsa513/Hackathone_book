@@ -16,8 +16,68 @@
   }
 }
 
+.heroContent {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero__title {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  letter-spacing: -0.025em;
+}
+
+@media screen and (max-width: 996px) {
+  .hero__title {
+    font-size: 2rem;
+  }
+}
+
+.hero__subtitle {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
 .buttons {
   display: flex;
+  gap: 1rem;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+  .buttons {
+    flex-direction: column;
+  }
+}
+
+.buttons .button {
+  min-width: 200px;
+  margin: 0;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: var(--ifm-global-radius);
+  transition: all 0.2s ease-in-out;
+}
+
+.buttons .button:hover {
+  transform: translateY(-2px);
+}
+
+.buttons .button--secondary {
+  background-color: transparent;
+  border: 2px solid var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+}
+
+.buttons .button--secondary:hover {
+  background-color: var(--ifm-color-primary);
+  color: white;
 }
